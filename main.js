@@ -60,7 +60,6 @@ function myJSONParse(jsonString) {
     //iterating through object string
     while(true){
       token = tokens[index++];
-      console.log(token);
       //if token start does not have double quotes of string key throw error
       if (token[0] !== '"')
         throw new Error('Expected string as key');
@@ -101,7 +100,6 @@ function myJSONParse(jsonString) {
 
      while(true) {
        array.push(parseValue());
-       console.log(array);
 
       //if next token is end of array, break loop
       token = tokens[index++];
